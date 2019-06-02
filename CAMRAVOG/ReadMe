@@ -8,20 +8,6 @@ should work.
 Secondly, The website is responsive, yay!
 Now onto the bigger stuff,
 
-* The 'meetings' file *
-
-The meetings file should be found in the main file along with the 'index.php' file.
-This file is used to split meetings into two categories, ones which have been and gone, and
-those that are still in the future.
-    IF the date is, or is after, the current date, then it will be added to the center piece
-    with a calendar and slide show.
-
-    ALL data will be added to a table below the slideshow.
-
-Thus if you want to add more meetings, do this via the file! not by adding HTML.
-After each year you will be required to create a table and populate it with the previous meetings.
-(You can copy and paste the tables already in the HTML and switch out this information)
-
 * The Awards Page *
 You will, without a doubt, be changing these from time to time, thus the images have been named according to
 their award header, rename the new winners images to the same name of the old winners, then replace the old with
