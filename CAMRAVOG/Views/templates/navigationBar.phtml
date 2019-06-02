@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <base href="index.html" target="_blank"/>
+
+    <link href="https://fonts.googleapis.com/css?family=Merriweather|Raleway|Libre+Franklin" rel="stylesheet">
+    <link rel="stylesheet" href="css/myStyles.css">
+
+    <meta name="description" content="CAMRA Vale Of Glamorgan and Bridgend official website"/>
+    <meta name="keywords" content="CAMRA, Pubs, Vale of Glamorgan, Bridgend"/>
+    <meta name="author" content="Christopher Lewis"/>
+    <meta name="viewport" content="width=device-width, initial-scale=0.5, user-scalable=no">
+
+    <title>CAMRA Vale of Glamorgan</title>
+    <link rel="shortcut icon" href="images/CAMRA-Logo.png" />
+</head>
+
+<body onload="imageLoad(); showBox();">
+    <!--
+    * This will contain all the features and functions
+    * related to the navigation bar.
+    -->
+    <nav>
+        <ul class="navigation-top">
+            <li class="nav-Item" id="home">    <a href="index.php"    target="_self">Home</a></li>
+            <li class="nav-Item" id="meetings"><a href="meetings.php" target="_self">Meetings</a></li>
+            <li class="nav-Item" id="awards">  <a href="awards.php"   target="_self">Awards</a></li>
+            <li class="nav-Item" id="join">    <a href="join.php"     target="_self">Join Us</a></li>
+            <li class="nav-Item" id="join">    <a href="links.php"     target="_self">Links</a></li>
+        </ul>
+    </nav>
+
+    <div class="FloatingBox">
+        <a onclick="hideBox();">✖</a>
+        <h2>Your opinions matter!</h2>
+        <p>
+            <a href="mailto:chairman@vogcamra.org.uk">Email Us</a> your comments, and score beers on <a href="https://whatpub.com/login"> WhatPub</a>
+        </p>
+    </div>

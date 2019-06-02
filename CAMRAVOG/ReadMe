@@ -1,0 +1,55 @@
+Hey there, this file will contain a few details about the site so you
+and any future developer can get a quick understanding of the basics.
+
+Firstly, PHP is used throughout the website, as is Javascript; I personally
+used the PHPStorm IDE to develop the website although most other IDE's for web development
+should work.
+
+Secondly, The website is responsive, yay!
+Now onto the bigger stuff,
+
+* The 'meetings' file *
+
+The meetings file should be found in the main file along with the 'index.php' file.
+This file is used to split meetings into two categories, ones which have been and gone, and
+those that are still in the future.
+    IF the date is, or is after, the current date, then it will be added to the center piece
+    with a calendar and slide show.
+
+    ALL data will be added to a table below the slideshow.
+
+Thus if you want to add more meetings, do this via the file! not by adding HTML.
+After each year you will be required to create a table and populate it with the previous meetings.
+(You can copy and paste the tables already in the HTML and switch out this information)
+
+* The Awards Page *
+You will, without a doubt, be changing these from time to time, thus the images have been named according to
+their award header, rename the new winners images to the same name of the old winners, then replace the old with
+the new image.
+If the text is too small then use the element class 'textFit' within the <p> element
+If the text is too large/overflows then get rid of this class.
+
+[EXAMPLE]
+<p class="textFit"> some text... </p>
+
+(Note: if the class is not assigned and the text still overflows then you will have to reduce
+the size of the content; but this is very unlikely to happen).
+
+
+* Extra Features *
+
+For those who access the site with a poor internet connection I have included a three stage
+loading process for the banner at both the top and bottom of the page.
+    'header-backdrop-min'   >> This is the worst quality image, it will load in mili-seconds for
+          (182x102)            anyone with regular 2G connnection [this is a poor connection speed].
+    'header-backdrop-tiny'  >> This is an okay quality image, it will load for anyone with regular
+          (285x160)            3G connection within mili-seconds [this is an okay connection speed].
+    'header-backdrop-full'  >> This is the high quality image, it will load quickly for anyone with
+         (4571x2571)           a good 3G connection or higher [This is the average connection speed].
+Each image will load in sequence, replacing eachother when the next best quality is finished loading,
+this is a seamless transition and the user experiance will not be affected in any negative way.
+If you want to replace this with a new image I recommend using 'https://unsplash.com/' which is a completely
+free, copyright free, website where creators will allow you to download high quality images. I Promise it is copyright free!
+Take the downloaded image (this is the h-b-full image) and make two copies using 'http://www.imageoptimizer.net/Pages/Home.aspx'
+Each time reducing the width and height, this will make them smaller and thus decreasing the quality. The sizes I used are listed
+under the names above.
